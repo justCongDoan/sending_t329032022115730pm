@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editNameID"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/editNumberID"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_number" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rBtbMaleID"
+            android:text="@string/male"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rBtnFemaleID"
+            android:text="@string/female"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/addContactBtnID"
+        android:layout_gravity="center"
+        android:text="@string/add_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onAddContactButtonClick"/>
+
+    <ListView
+        android:id="@+id/lvContactID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
